@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    color: rgb(255, 255, 255);
+}
+
+body, input, button, textarea {
+    /* font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  font-family: 'Nunito', sans-serif; */
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.top h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+#logo {
+    width: 10rem;
+    margin: auto 0;
+}

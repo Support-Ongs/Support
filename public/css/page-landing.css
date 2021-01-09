@@ -1,0 +1,102 @@
+#page-landing {
+  background: linear-gradient(329.54deg, #6af7cf 0%, #6af780 100%);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#container {
+  margin: auto;
+  width: min(80%, 112rem);
+}
+
+.location, h1, .visit, p {
+  height: 16vh;
+}
+
+.visit a {
+  width: 8rem;
+  height: 8rem;
+  background: #54D1FE;
+  /*  #E883F7 */
+  border: none;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  transition: background .2ms;
+}
+
+.visit p {
+  margin: 1rem 0;
+}
+
+.visit a:hover {
+  background: #E883F7;
+}
+
+.top {
+  animation-delay: 50ms;
+}
+
+.location {
+  animation-delay: 100ms;
+}
+
+main h1 {
+  animation-delay: 150ms;
+  font-size: clamp(2.7rem, 4vw, 4rem);
+}
+
+.visit p {
+  animation-delay: 200ms;
+}
+
+.visit a {
+  animation-delay: 250ms;
+}
+
+@media(min-width:760px) {
+  #container {
+    /* padding: 2rem 5rem; */
+    background: url("../images/bg.png") no-repeat 80% / clamp(25rem, 40vw, 56rem);
+    background-position: right center;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .location, h1, .visit, p {
+    height: initial;
+    text-align: initial;
+  }
+  .location p {
+    text-align: right;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  main h1 {
+    font-size: clamp(4rem, 5vw, 8rem);
+    font-weight: bold;
+    line-height: .88;
+    margin: clamp(10%, 9vh, 12%) 0 4rem;
+    width: min(400px, 80%);
+  }
+  .visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .visit p {
+    line-height: 1.8;
+    width: clamp(20rem, 35vw, 30rem);
+    display: flex;
+    text-align: left;
+  }
+  .visit a {
+    margin: initial;
+  }
+}
