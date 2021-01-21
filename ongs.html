@@ -4,7 +4,15 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8" />
-  <title>Localize Ongs | happy</title>
+  <title>Localize Ongs | Support</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
   <link rel="icon" href="./public/images/logo-icon.png" />
   <link rel="stylesheet" href="./public/css/main.css" />
   <link rel="stylesheet" href="./public/css/animations.css" />
@@ -16,9 +24,10 @@
 
 <body>
   <div id="page-ongs">
-    <aside>
+    <aside class='animate-right'>
       <header>
-        <img src="./public/images/map-marker.svg" alt="Support">
+        <img id="logo" src="./public/images/logo-icon.png" alt="Support">
+
         <h2> Escolha uma ong no mapa</h2>
         <p>Muitas vidas podem ser mudadas por voce</p>
       </header>
@@ -27,12 +36,15 @@
         <p>Piaui</p>
       </footer>
     </aside>
-    <div id="mapid">
+    <div id="mapid" class="animate-appear">
     </div>
     <a href="./create-ongs.html" class="create-ongs" title="Cadastre uma ong">
       <img src="./public/images/plus.svg" alt="Criar Ong">
     </a>
   </div>
+
+
+  <script src='public/scripts/page-ongs.js'></script>
 </body>
 
 </html>

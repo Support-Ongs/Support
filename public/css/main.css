@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -17,7 +18,7 @@ body, input, button, textarea {
   font-size: 18px;
   line-height: 1;
   font-family: 'Nunito', sans-serif; */
-    font: 400 1.8rem/1 'Nunito', sans-serif;
+    font: 400 1.6rem/1 'Nunito', sans-serif;
 }
 
 .top {
@@ -37,6 +38,6 @@ body, input, button, textarea {
 }
 
 #logo {
-    width: 10rem;
+    width: 8rem;
     margin: auto 0;
 }

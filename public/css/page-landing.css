@@ -79,7 +79,7 @@ main h1 {
     line-height: 1.2;
   }
   main h1 {
-    font-size: clamp(4rem, 5vw, 8rem);
+    font-size: clamp(4rem, 3vw, 8rem);
     font-weight: bold;
     line-height: .88;
     margin: clamp(10%, 9vh, 12%) 0 4rem;
