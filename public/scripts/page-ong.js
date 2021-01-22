@@ -23,3 +23,22 @@ L
   .marker([-7.0814585,-41.4352178],{icon})
   .addTo(map)
   .bindPopup(popup)
+
+  /*image gallery*/
+  function selectImage(event){
+    const button = event.currentTarget
+
+    //remover todas as classes .active
+    const buttons = document.querySelectorAll('.images button')
+    buttons.forEach((button) => {button.classList.remove("active")})
+
+    //selecionar a imagem clicada
+
+    const image = button.children[0]
+    const imageContainer = document.querySelector(".ong-details > img")
+
+    //atualizar o container de imagem
+    imageContainer.src = image.src
+    //adicionar a classe .active para este botao
+   button.ClassList.add('active')
+}
