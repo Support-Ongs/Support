@@ -34,7 +34,8 @@
 }
 
 .visit a:hover {
-  background: #E883F7;
+  /* background: #E883F7; */
+  background: #6cf080;
 }
 
 .top {
