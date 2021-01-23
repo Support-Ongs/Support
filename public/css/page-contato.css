@@ -1,0 +1,93 @@
+body {
+  color: #13131A;
+}
+
+.container {
+  display: flex;
+  background: #F0F0F5;
+  border: solid 1px #d4d4da;
+  margin: auto;
+  height: 80vh;
+  width: 140vh;
+  align-items: center;
+  box-shadow: .5rem .5rem .5rem #a7a4a4;
+}
+
+header {
+  flex-direction: column;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding-left: 6rem;
+}
+
+header>img {
+  width: 10rem;
+  margin: 0 0;
+  margin-bottom: 5rem;
+}
+
+header p {
+  margin-top: 3rem;
+}
+
+header .back-home {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  margin-top: 6rem;
+  cursor: pointer;
+}
+
+main {
+  margin: 0;
+  padding-left: 6rem;
+}
+
+main .contato {
+  display: flex;
+  flex-direction: column;
+  width: 45vh;
+}
+
+main .contato input {
+  border: solid 1px #cec8c8;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+}
+
+main .contato input[id="nome"] {
+  height: 5rem;
+  width: 28rem;
+}
+
+main .contato input[id="descrição"] {
+  height: 15rem;
+  width: 28rem;
+}
+
+main .contato input[id="contato"] {
+  height: 5rem;
+  width: 28rem;
+}
+
+main .contato .button {
+  display: flex;
+}
+
+main .contato .button input {
+  border: solid 1px #a7a4a4;
+  width: 18rem;
+  height: 4rem;
+  background: linear-gradient(329.54deg, #29D158 0%, #00C7C7 100%);
+  color: white;
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
+}
+
+main .contato .button input[name='cancel'] {
+  color: black;
+  width: 12rem;
+  background: #F0F0F5;
+  margin-right: 1rem;
+}
