@@ -12,7 +12,7 @@ function getCookie(key) {
 
 function checkCookies() {
   if(getCookie('firstAccesses')) {
-    window.location.href = 'file:///media/keven/Data/www/Support/Support-FrontEnd/ongs.html'
+    window.location.href = './ongs.html'
   }
   else {
     console.log("cjiojdvofjijv")

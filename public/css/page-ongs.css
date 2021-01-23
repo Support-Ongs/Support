@@ -32,6 +32,27 @@ aside footer p {
   margin-top: 0.8rem;
 }
 
+aside .icons {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+aside .icons img {
+  width: 4rem;
+  margin-bottom: 2rem;
+  border: solid 2px #00E1FF;
+  border-radius: 2rem;
+}
+
+aside .icons img:hover {
+  width: 4.5rem;
+  border: solid 3px #60FCCF;
+  border-radius: 2rem;
+}
+
 /*button*/
 
 #mapid {
