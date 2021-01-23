@@ -14,6 +14,7 @@ body {
 }
 
 header {
+  margin: auto;
   flex-direction: column;
   display: flex;
   /* align-items: center; */
@@ -32,6 +33,8 @@ header p {
 }
 
 header .back-home {
+  text-decoration: none;
+  color: #13131A;
   display: flex;
   align-items: center;
   justify-content: baseline;
@@ -40,14 +43,13 @@ header .back-home {
 }
 
 main {
-  margin: 0;
-  padding-left: 6rem;
+  margin: auto;
 }
 
 main .contato {
   display: flex;
   flex-direction: column;
-  width: 45vh;
+  width: 30rem;
 }
 
 main .contato input {
@@ -58,24 +60,26 @@ main .contato input {
 
 main .contato input[id="nome"] {
   height: 5rem;
-  width: 28rem;
+  width: 100%;
 }
 
 main .contato input[id="descrição"] {
   height: 15rem;
-  width: 28rem;
+  width: 100%;
 }
 
 main .contato input[id="contato"] {
   height: 5rem;
-  width: 28rem;
+  width: 100%;
 }
 
 main .contato .button {
   display: flex;
+  width: 100%;
 }
 
 main .contato .button input {
+  cursor: pointer;
   border: solid 1px #a7a4a4;
   width: 18rem;
   height: 4rem;
