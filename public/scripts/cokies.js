@@ -12,7 +12,7 @@ function getCookie(key) {
 
 function checkCookies() {
   if(getCookie('firstAccesses')) {
-    window.location.href = './ongs.html'
+    window.location.href = ''
   }
   else {
     console.log("cjiojdvofjijv")
@@ -20,4 +20,23 @@ function checkCookies() {
   }
 } 
 
-checkCookies();
+if (localStorage.getItem('cookieSeen') != 'shown') {
+  $('cookie-banner').delay(2000).fadeIn();
+  localStorage.setItem('cookieSeen','shown')
+};
+$('close').click(function() {
+  $('cookie-banner').fadeOut();
+})
+// var $overlay = document.querySelector('.js-overlay');
+// var $closeButton = document.querySelector('.js-close');
+ 
+// if (Cookies.get('closed')) {
+//   $overlay.classList.remove('is-open');
+// }
+ 
+// $closeButton.addEventLitener('click', function(){
+//   Cookies.set('closed', true, { expires: 7 })
+ 
+//   $overlay.classList.remove('is-open');
+// });
+// checkCookies();

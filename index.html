@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="./public/css/main.css" />
   <link rel="stylesheet" href="./public/css/animations.css" />
   <link rel="stylesheet" href="./public/css/page-landing.css" />
+  <link rel="stylesheet" href="./public/css/cookies.css" />
+
+
 
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -26,7 +29,7 @@
           <li> <a href="./ong.html"> Cadastrar Ongs </a> </li>
           <li> <a href="./ongs.html"> Procurar uma Ong</a></li>
           <li> <a href="./sobre.html"> Sobre</a></li>
-          <li> <a href="./sobre.html"> Entrar em contato</a></li>
+          <li> <a href="./contato.html"> Entrar em contato</a></li>
         </ul>
 
       </header>
@@ -77,9 +80,20 @@
         <img src="./public/images/arrow.svg" alt="Conhecer Ong" />
       </a>
     </span>
-  </div>
-  <!-- <script src="./public/scripts/cokies.js"> -->
-  </script>
-</body>
+
+    <div class="cookies-container">
+      <div class="cookies-content">
+        <p>Permito o uso de cookies para:</p>
+        <div class="cookies-pref">
+          <label><input type="checkbox" checked data-function="analytics">Análise de Uso</label>
+          <label><input type="checkbox" checked data-function="marketing">Marketing</label>
+        </div>
+        <button class="cookies-save">Salvar e Continuar</button>
+      </div>
+    </div>
+
+
+    <script src="./public/scripts/cookies.js">
+    </script>
 
 </html>

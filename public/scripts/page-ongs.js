@@ -22,3 +22,4 @@ L
   .marker([-7.0814585,-41.4352178],{icon})
   .addTo(map)
   .bindPopup(popup)
+
