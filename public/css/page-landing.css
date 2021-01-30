@@ -11,17 +11,21 @@
   width: min(80%, 112rem);
 }
 
-.location, h1, .visit, p {
+.visit .location {
   height: 16vh;
-}
-
-.visit a {
   width: 8rem;
   height: 8rem;
+  justify-content: center;
+  transition: background .2ms;
+}
+
+a.visit {
+  width: 5rem;
+  height: 5rem;
   background: #54D1FE;
   /*  #E883F7 */
   border: none;
-  border-radius: 3rem;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,13 +37,44 @@
   margin: 1rem 0;
 }
 
-.visit a:hover {
+a.visit:hover {
   /* background: #E883F7; */
   background: #6cf080;
 }
 
 .top {
   animation-delay: 50ms;
+}
+
+ul.top_bar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.top_bar li {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: solid 1px #ffffff;
+  width: 12rem;
+  height: 4rem;
+  background: linear-gradient(329.54deg, #29D158 0%, #00C7C7 100%);
+  color: white;
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
+}
+
+.top_bar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
 }
 
 .location {
@@ -100,4 +135,50 @@ main h1 {
   .visit a {
     margin: initial;
   }
+  .top_bar li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.page2 {
+  background: linear-gradient(329.54deg, #6af7cf 0%, #6af780 100%);
+  text-align: center;
+  min-height: 100vh;
+  display: block;
+  align-items: center;
+  transition: background .2ms;
+}
+
+.page2 h1, p {
+  align-items: center;
+  margin: 0 auto;
+  width: min(80%, 112rem);
+  padding-top: 5rem;
+  color: white;
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
+  line-height: 2rem;
+}
+
+.page2 p {
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+#img-ong {
+  width: 40rem;
+  border-radius: 2rem;
+  border: solid 1px #6af7cf;
+  margin: 0 auto;
+}
+
+p #img-ong {
+  display: flex;
+  align-items: center;
+}
+
+.page2 span {
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
 }
